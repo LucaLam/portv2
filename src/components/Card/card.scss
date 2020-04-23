@@ -1,0 +1,36 @@
+@import "../../styles/base.scss";
+
+.card-container{
+    display: inline-block;
+    border-radius: 3px;
+    width: 25rem;
+    height: 25rem;
+    box-shadow: 1px 0 5px  black;
+    margin-right: 3rem;
+    margin-bottom: 3rem;
+    transition: all .4s ease;
+
+
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 15px $highlight-colour;
+    }
+
+    &:active{
+        transform: translateY(.3rem);
+        box-shadow: 0 0 20px $highlight-colour;
+    }
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: grayscale(100%);
+
+    &:hover{
+        filter: none;
+    }
+    
+}
+

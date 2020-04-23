@@ -1,0 +1,113 @@
+@import "../styles/base.scss";
+
+.about{
+    padding: 3rem;
+    display: flex;
+    font-family: $default-text;
+    width: 100vw;
+    // height: 100vh;
+
+    &__about-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 36rem;
+        
+
+        .headshot{
+            background-image: url('../assets/luca_headshot.jpg');
+            // filter: grayscale(90%);
+            width: 20rem;
+            height: 20rem;
+            background-size: cover;
+            border-radius: 50%;
+        }
+
+        .contact-container{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            text-align: center;
+
+            line-height: 1.8rem;
+            font-size: 1.2rem;
+
+            & *:hover {
+                border-bottom: solid 1px $highlight-colour;
+                cursor: pointer;
+            }
+
+            & *::selection{
+                background-color: $highlight-colour;
+                color:white;
+            }
+        }
+    }
+
+    &__paragraph-container{
+        padding: 0 0 0 3rem;
+        width: 40%;
+        margin-bottom: 3rem;
+        
+        .paragraph{
+            font-size: 1.3rem;
+            line-height: 2.5rem;
+
+            &::selection{
+                background-color: $highlight-colour;
+                color:white;
+            }
+        }
+    }
+
+}
+
+.expand-btn{
+    margin-top: 2rem;
+    float: right;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.8rem;
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    border: black solid 1px;
+
+    animation: pulseGlow infinite 4s;
+
+    
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.tech-stack{
+    margin-top: 4rem;
+
+    & {
+        font-size: 1.6rem;
+    }
+}
+
+@keyframes pulseGlow {
+
+    0%{
+        box-shadow: 0 0 3px $highlight-colour;
+    }
+
+    50%{
+        box-shadow: 0 0 10px $highlight-colour;
+    }
+
+    80%{
+        box-shadow: 0 0 20px $highlight-colour;
+    }
+
+   100%{ 
+        box-shadow: 0 0 25px $highlight-colour;
+   }
+    
+}

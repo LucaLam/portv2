@@ -1,0 +1,12 @@
+@import '../styles/base.scss';
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 4rem 10rem;
+}
+
+.hide{
+    display: none;
+}

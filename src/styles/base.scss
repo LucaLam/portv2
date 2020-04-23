@@ -1,0 +1,30 @@
+@import './fonts.scss';
+@import './variables.scss';
+
+//Typography
+
+.header-1{
+    font-size: 4rem;
+    font-weight: 300;
+    font-family: $default-text;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    &::selection{
+        background-color: $highlight-colour;
+        color:white;
+    }
+}
+
+.header-2{
+    font-size: 3rem;
+    font-weight: 300;
+    font-family: $default-text;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    &::selection{
+        background-color: $highlight-colour;
+        color:white;
+    }
+}
