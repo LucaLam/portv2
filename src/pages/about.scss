@@ -5,7 +5,13 @@
     display: flex;
     font-family: $default-text;
     width: 100vw;
-    // height: 100vh;
+
+    @media only screen and (max-width: $large-mobile){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__about-container{
         display: flex;
@@ -13,6 +19,10 @@
         justify-content: space-around;
         align-items: center;
         height: 36rem;
+
+        @media only screen and (max-width: $tablet){
+           width: 80%;
+        }
         
 
         .headshot{
@@ -43,6 +53,18 @@
                 background-color: $highlight-colour;
                 color:white;
             }
+
+            @media only screen and (max-width: $tablet){
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                }
+            & *{
+            @media only screen and (max-width: $tablet){
+                margin-right: 10px;
+                }
+            }
         }
     }
 
@@ -50,6 +72,10 @@
         padding: 0 0 0 3rem;
         width: 40%;
         margin-bottom: 3rem;
+
+        @media only screen and (max-width: $tablet){
+            width: 80%;
+            }
         
         .paragraph{
             font-size: 1.3rem;
